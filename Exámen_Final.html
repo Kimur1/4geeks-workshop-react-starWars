@@ -1,0 +1,113 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOEn0o4s+EWWQt16H7kGiFB",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Kimur1/4geeks-workshop-react-starWars/blob/master/Ex%C3%A1men_Final.html\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "luLpGgFF9PAr",
+        "outputId": "d4ff7ac4-57e0-408b-9ddc-81cd029c73c2"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "IndentationError",
+          "evalue": "unindent does not match any outer indentation level (<tokenize>, line 21)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<tokenize>\"\u001b[0;36m, line \u001b[0;32m21\u001b[0m\n\u001b[0;31m    minutos = np.linscape(0,1200,500)\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m unindent does not match any outer indentation level\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Proyecto Final 1 Kimberly Murillo .\n",
+        "#Ejrcicio1\n",
+        "import matplotlib.pyplot as plt\n",
+        "import numpy as np\n",
+        "\n",
+        "#Datos de tarifas y costos\n",
+        "\n",
+        "tarifa_A = 34\n",
+        "costo_porm_A = 0.05\n",
+        "\n",
+        "tarifa_B = 40\n",
+        "costo_por_m_B = 0.04\n",
+        "\n",
+        "#Funciones\n",
+        "def costo_A(minutos):\n",
+        "    return tartifa_A + costo_porm_A * minutos\n",
+        "\n",
+        "def costo_B(minutos):\n",
+        "    return tarifa_B + costo_por_m_B * minutos\n",
+        "\n",
+        "  minutos = np.linscape(0,1200,500)\n",
+        "\n",
+        "  costo_A_vals = costo_A(minutos)\n",
+        "  costo_B_vals = costo_B(minutos)\n",
+        "\n",
+        "\n",
+        "#Grafico\n",
+        "plt.figure(figsize=(10,6))\n",
+        "plt.plot(minutos, costo_A_vals, label= 'A', color = 'red')\n",
+        "plt.plot(minutos, costo_B_vals, label= 'B', color = 'green')\n",
+        "plt.axvline(x=600, color='blue',linestyle= '--', label = 'punto de igualdad en (600 minutos)')\n",
+        "plt.ylabel('costo ($)')\n",
+        "plt.xlabel('Minutos usados')\n",
+        "plt.tittle('Comparacion de costos A y B')\n",
+        "plt.grid(True)\n",
+        "plt.legend\n",
+        "plt.show()\n",
+        "\n",
+        "\n",
+        "#Resultado\n",
+        "\n",
+        "#Resultado\n",
+        "def resultados():\n",
+        "  m_1160 = 1160\n",
+        "  m_420 = 420\n",
+        "\n",
+        "costo_1160_A = costo_A(1160)\n",
+        "costo_1160_B = costo_B(1160)\n",
+        "costo_420_A = costo_A(420)\n",
+        "costo_420_B = costo_B(420)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Parte 2**"
+      ],
+      "metadata": {
+        "id": "Owgm014Xs235"
+      }
+    }
+  ]
+}
